@@ -92,3 +92,20 @@ body {
   background-color: #a78bfa;
   color: white;
 }
+
+.links-viewer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.links-viewer-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-viewer-links{
+  display: flex;
+  flex-direction: column;
+}

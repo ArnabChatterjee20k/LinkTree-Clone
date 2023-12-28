@@ -24,3 +24,13 @@ detailsTab.addEventListener("click", () => {
   detailsContainer.style.display = "flex";
   linksContainer.style.display = "none";
 });
+
+const platforms = ["github", "youtube", "linkedin", "twitter"];
+const platformLinksMap = {};
+platforms.map((p) => {
+  platformLinksMap[p] = "";
+});
+
+function generateLinks(){
+  
+}
