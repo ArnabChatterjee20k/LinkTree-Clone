@@ -103,6 +103,7 @@ body {
 .links-viewer-heading {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .links-viewer-links{

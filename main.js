@@ -31,6 +31,30 @@ platforms.map((p) => {
   platformLinksMap[p] = "";
 });
 
-function generateLinks(){
-  
+const addLinkButton = document.querySelector(".add-link-btn");
+addLinkButton.addEventListener("click", (e) => {
+  const linksEditor = document.querySelector(".all-links");
+  const component = LinkComponent();
+  linksEditor.innerHTML += component;
+});
+
+function LinkComponent() {
+  return `<div class="links-viewer">
+            <div class="links-viewer-heading">
+              <p>Link</p>
+              <button>Remove</button>
+            </div>
+            <div class="links-viewer-links">
+              <label for="platform">Platform</label>
+              <select name="platform" id="platform">
+                ${platforms.map(
+                  (platformName, index) =>
+                    `<option value=${index}>${platformName}</option>`
+                )}
+              </select>
+
+              <label for="link">Link</label>
+              <input type="text" name="link" id="link"/>
+            </div>
+          </div>`;
 }
