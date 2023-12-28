@@ -10,14 +10,17 @@ const detailsTab = document.querySelector(`.${OPTIONS_CLASS_MAP.details}`);
 const linksContainer = document.querySelector(`.links-add-section`);
 const detailsContainer = document.querySelector(`.links-details-section`);
 
+linksContainer.style.display = "flex";
+detailsContainer.style.display = "none";
+
 const container = document.querySelector(".container");
 
 linksTab.addEventListener("click", () => {
-  linksContainer.style.display = "block";
+  linksContainer.style.display = "flex";
   detailsContainer.style.display = "none";
 });
 
 detailsTab.addEventListener("click", () => {
-  detailsContainer.style.display = "block";
+  detailsContainer.style.display = "flex";
   linksContainer.style.display = "none";
 });

@@ -59,3 +59,36 @@ body {
 .links-add-section , .links-details-section{
   display:none
 }
+
+.container{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.links-add-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links-tagline{
+  font-size: 1rem;
+}
+
+.add-link-btn{
+  background-color: transparent;
+  color: black;
+  border: 2px solid #a78bfa;
+  border-radius: 5px;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  margin-top: 1rem;
+  color: #a78bfa;
+  cursor: pointer;
+}
+
+.add-link-btn:hover{
+  background-color: #a78bfa;
+  color: white;
+}
